@@ -19,6 +19,27 @@
 }
 
 footer {
-    background-color: #bebebe!important;
+    background-color: #bebebe !important;
     box-shadow: #8b8787 0px 0px 10px;
+}
+
+/* Efectos personalizados */
+.hover-effect {
+    transition: all 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Ajuste para la imagen de la card grande */
+.card-img-overlay .bg-opacity-25 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+}
+
+/* Asegurar que las imágenes mantengan relación de aspecto */
+.object-fit-cover {
+    object-fit: cover;
+    width: 100%;
 }
