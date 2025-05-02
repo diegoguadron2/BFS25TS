@@ -18,7 +18,6 @@ Réplica responsiva de la página principal de Siman (tienda departamental), des
 
 ## ✨ Features
 - **Responsive Design** (Mobile ↔ Desktop)
-- **Optimización de Imágenes** (WebP + Lazy Load)
 - **Bootstrap Components**:
   - Navbar togglable
   - Carousel con controles
