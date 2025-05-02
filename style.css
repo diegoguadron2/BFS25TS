@@ -43,3 +43,20 @@ footer {
     object-fit: cover;
     width: 100%;
 }
+
+.card-img-container {
+    height: 300px;
+    /* Altura fija más grande para las imágenes */
+    overflow: hidden;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
