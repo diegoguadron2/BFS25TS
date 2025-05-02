@@ -17,3 +17,8 @@
     background-size: 50%;
     filter: none;
 }
+
+footer {
+    background-color: #bebebe!important;
+    box-shadow: #8b8787 0px 0px 10px;
+}
