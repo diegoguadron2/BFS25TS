@@ -12,24 +12,26 @@
 </head>
 
 <body>
-    <!-- Navbar-->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-danger">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample"
+                aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <a class="navbar-brand" href="./index.html">
                 <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/c572d707-532e-46b5-95fd-92bbe236df14___02caa8686a6684d6dae97c291b68bf42.gif"
-                    width="200" />
+                    width="200" alt="Logo" />
             </a>
 
             <div class="collapse navbar-collapse" id="navbarExample">
-                <div class="d-flex justify-content-center w-100 px-2">
-                    <form class="w-100 position-relative" style="width: 70%">
-                        <input type="text"
+                <div class="d-flex justify-content-center w-100">
+                    <form class="w-100 position-relative" style="max-width: 70%">
+                        <label for="searchInput" class="visually-hidden">Buscar</label>
+                        <input type="text" id="searchInput"
                             class="form-control border-0 bg-secondary bg-opacity-25 rounded-pill py-2 ps-5"
-                            style="outline: none" placeholder="Search" />
+                            placeholder="Search" />
                         <span class="position-absolute top-50 start-0 translate-middle-y ms-3">
                             <i class="bi bi-search"></i>
                         </span>
@@ -38,7 +40,7 @@
 
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link active text-white" href="./index.html" title="Home">
+                        <a class="nav-link active text-white" href="./index.html" title="Home" aria-current="page">
                             <i class="bi bi-house-door-fill fs-5"></i>
                         </a>
                     </li>
@@ -48,7 +50,7 @@
                         </a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link active text-white" href="./index.html">
+                        <a class="nav-link active text-white" href="./index.html" aria-current="page">
                             <i class="bi bi-house-door-fill fs-5 me-2"></i>Home
                         </a>
                     </li>
@@ -62,55 +64,63 @@
         </div>
     </nav>
 
-    <!-- Carrusel de imagenes -->
+    <!-- Carrusel de imágenes -->
     <div class="container my-3">
-        <div id="carouselExampleInterval" class="carousel slide rounded-4 overflow-hidden shadow"
-            style="max-width: 100%; margin: 0 auto">
+        <div id="carouselExampleInterval" class="carousel slide rounded-4 overflow-hidden shadow mx-auto"
+            style="max-width: 100%">
             <div class="carousel-inner">
+                <!-- Item 1 -->
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <a href="page3.html">
+                    <a href="page3.html" aria-label="Ver más detalles">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/28e493c7-1f65-4e1d-98a8-432f545104c3___39a82cd55744ccac2a02e2d3f6990fcd.jpeg"
-                            class="d-block w-100" alt="..." />
+                            class="d-block w-100" alt="Promoción 1" />
                     </a>
                 </div>
+
+                <!-- Item 2 -->
                 <div class="carousel-item" data-bs-interval="2000">
-                    <a href="page3.html">
+                    <a href="page3.html" aria-label="Ver más detalles">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/4b75fe16-61e9-479e-aab6-c6a4507075b6___f74003b391074f9dd57bf26e7749eea3.jpg"
-                            class="d-block w-100" alt="..." />
+                            class="d-block w-100" alt="Promoción 2" />
                     </a>
                 </div>
+
+                <!-- Item 3 -->
                 <div class="carousel-item">
-                    <a href="page3.html">
+                    <a href="page3.html" aria-label="Ver más detalles">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/b5d99d27-eb95-4c6a-a47f-4a42d1fc3f88___75262e5e11e0d7fbf99afe86d21e6134.jpg"
-                            class="d-block w-100" alt="..." />
+                            class="d-block w-100" alt="Promoción 3" />
                     </a>
                 </div>
             </div>
+
+            <!-- Controles -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon bg-opacity-75 rounded-circle p-3" aria-hidden="true"
+                data-bs-slide="prev" aria-label="Imagen anterior">
+                <span class="carousel-control-prev-icon bg-opacity-75 rounded-circle p-3"
                     style="width: 40px; height: 40px"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
+
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon bg-opacity-75 rounded-circle p-3" aria-hidden="true"
+                data-bs-slide="next" aria-label="Imagen siguiente">
+                <span class="carousel-control-next-icon bg-opacity-75 rounded-circle p-3"
                     style="width: 40px; height: 40px"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
 
-    <!-- Secciones -->
+    <!-- Secciones de productos -->
     <div class="container py-4">
         <div class="row">
             <!-- Card Grande (Izquierda) -->
             <div class="col-xl-5 col-lg-6 col-12 mb-4 mb-lg-0">
-                <a href="./page4.html">
+                <a href="./page4.html" aria-label="Ropa de mujer">
                     <div class="card h-100 shadow-lg border-0 overflow-hidden">
                         <img src="https://lv2-cdn.azureedge.net/twice/bf84930bfde74e32a2d5a7b3c50b4af9-04_%E1%84%89%E1%85%A1%E1%84%82%E1%85%A1_A_0120241206020726529.jpg"
                             class="card-img-top h-100 object-fit-cover" style="min-height: 300px"
-                            alt="Imagen principal" />
+                            alt="Colección de ropa para mujer" />
                         <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-25">
                             <div class="bg-white p-3 rounded-top">
                                 <p class="card-text mb-0">Ropa de mujer</p>
@@ -126,12 +136,13 @@
                     <!-- Card 1 -->
                     <div class="col">
                         <div class="card h-100 shadow border-0 hover-effect">
-                            <a href="./page4.html">
+                            <a href="./page4.html" aria-label="Accesorios">
                                 <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/91f1266e-911f-4818-bf4a-869cabc7aee7___188be5abc80a5412d99d6619db3efeb0.jpg"
-                                    class="card-img-top object-fit-cover" style="height: auto" alt="Imagen card" />
+                                    class="card-img-top object-fit-cover" style="height: auto"
+                                    alt="Variedad de accesorios de moda" />
                             </a>
                             <div class="card-body">
-                                <p class="card-text">Accesorios</p>
+                                <p class="card-text mb-0">Accesorios</p>
                             </div>
                         </div>
                     </div>
@@ -139,12 +150,13 @@
                     <!-- Card 2 -->
                     <div class="col">
                         <div class="card h-100 shadow border-0 hover-effect">
-                            <a href="./page4.html">
+                            <a href="./page4.html" aria-label="Audífonos">
                                 <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/cc7dc5fa-3f0a-4cb4-a1d5-f7a7b8e31ab7___0ada617c39c0a1937695b176de17d2d4.gif"
-                                    class="card-img-top object-fit-cover" style="height: auto" alt="Imagen card" />
+                                    class="card-img-top object-fit-cover" style="height: auto"
+                                    alt="Audífonos de última generación" />
                             </a>
                             <div class="card-body">
-                                <p class="card-text">Audifonos</p>
+                                <p class="card-text mb-0">Audífonos</p>
                             </div>
                         </div>
                     </div>
@@ -152,12 +164,13 @@
                     <!-- Card 3 -->
                     <div class="col">
                         <div class="card h-100 shadow border-0 hover-effect">
-                            <a href="./page4.html">
+                            <a href="./page4.html" aria-label="Planchas y secadoras">
                                 <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/bbfaaff5-925a-4730-b932-a689b63b7044___b4ec8bc3ecab7b7cc2df2239dc1f1787.gif"
-                                    class="card-img-top object-fit-cover" style="height: auto" alt="Imagen card" />
+                                    class="card-img-top object-fit-cover" style="height: auto"
+                                    alt="Planchas y secadoras para el cuidado del cabello" />
                             </a>
                             <div class="card-body">
-                                <p class="card-text">Planchas, secadoras y mas</p>
+                                <p class="card-text mb-0">Planchas, secadoras y más</p>
                             </div>
                         </div>
                     </div>
@@ -165,14 +178,13 @@
                     <!-- Card 4 -->
                     <div class="col">
                         <div class="card h-100 shadow border-0 hover-effect">
-                            <a href="./page4.html">
+                            <a href="./page4.html" aria-label="Decoración para el hogar">
                                 <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/7c35c98a-e3b5-442a-8c0d-696906581ff4___925e2301c88e792db854bda49ab0b1be.jpg"
-                                    class="card-img-top object-fit-cover" style="height: auto" alt="Imagen card" />
+                                    class="card-img-top object-fit-cover" style="height: auto"
+                                    alt="Artículos de decoración para el hogar" />
                             </a>
                             <div class="card-body">
-                                <p class="card-text text-decoration-none">
-                                    Decoracion para el hogar
-                                </p>
+                                <p class="card-text mb-0">Decoración para el hogar</p>
                             </div>
                         </div>
                     </div>
